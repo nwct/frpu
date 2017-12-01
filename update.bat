@@ -1,6 +1,6 @@
 @echo off
 cd %~dp0
-set /p m=ÇëÊäÈë±ê¼Ç£º
+set /p m=è¯·è¾“å…¥æ ‡è®°ï¼š
 git init
 git add .
 git commit -m "%m%"
