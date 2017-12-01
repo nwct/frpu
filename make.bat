@@ -4,110 +4,100 @@ cd %~dp0
 go fmt ./src/...
 set version=0.13.0
 echo.
-echo ¿ªÊ¼±àÒëWindows 32Î»ÏµÍ³µÄ³ÌÐò
+echo å¼€å§‹ç¼–è¯‘Windows 32ä½ç³»ç»Ÿçš„ç¨‹åº
 set GOOS=windows
 set GOARCH=386
 mkdir %GOOS%-%GOARCH% 1>nul 2>nul
 mkdir %version% 1>nul 2>nul
 move %version% %GOOS%-%GOARCH% 1>nul 2>nul
 echo.
-echo ¿ªÊ¼±àÒë·þÎñ¶Ë...
+echo å¼€å§‹ç¼–è¯‘æœåŠ¡ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frps.exe src/cmd/frps/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo ¿ªÊ¼±àÒë¿Í»§¶Ë...
+echo å¼€å§‹ç¼–è¯‘å®¢æˆ·ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frpc.exe src/cmd/frpc/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo °´ÈÎÒâ¼ü¼ÌÐø±àÒëÏÂÒ»¸öÏµÍ³°æ±¾
-pause>nul
 
-echo ¿ªÊ¼±àÒëLinux 32Î»ÏµÍ³µÄ³ÌÐò
+echo å¼€å§‹ç¼–è¯‘Linux 32ä½ç³»ç»Ÿçš„ç¨‹åº
 set GOOS=linux
 set GOARCH=386
 mkdir %GOOS%-%GOARCH% 1>nul 2>nul
 mkdir %version% 1>nul 2>nul
 move %version% %GOOS%-%GOARCH% 1>nul 2>nul
 echo.
-echo ¿ªÊ¼±àÒë·þÎñ¶Ë...
+echo å¼€å§‹ç¼–è¯‘æœåŠ¡ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frps src/cmd/frps/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo ¿ªÊ¼±àÒë¿Í»§¶Ë...
+echo å¼€å§‹ç¼–è¯‘å®¢æˆ·ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frpc src/cmd/frpc/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo °´ÈÎÒâ¼ü¼ÌÐø±àÒëÏÂÒ»¸öÏµÍ³°æ±¾
-pause>nul
 
-echo ¿ªÊ¼±àÒëLinux armÏµÍ³µÄ³ÌÐò
+echo å¼€å§‹ç¼–è¯‘Linux armç³»ç»Ÿçš„ç¨‹åº
 set GOOS=linux
 set GOARCH=arm
 mkdir %GOOS%-%GOARCH% 1>nul 2>nul
 mkdir %version% 1>nul 2>nul
 move %version% %GOOS%-%GOARCH% 1>nul 2>nul
 echo.
-echo ¿ªÊ¼±àÒë·þÎñ¶Ë...
+echo å¼€å§‹ç¼–è¯‘æœåŠ¡ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frps src/cmd/frps/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo ¿ªÊ¼±àÒë¿Í»§¶Ë...
+echo å¼€å§‹ç¼–è¯‘å®¢æˆ·ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frpc src/cmd/frpc/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo °´ÈÎÒâ¼ü¼ÌÐø±àÒëÏÂÒ»¸öÏµÍ³°æ±¾
-pause>nul
 
-echo ¿ªÊ¼±àÒëLinux mipsÏµÍ³µÄ³ÌÐò
+echo å¼€å§‹ç¼–è¯‘Linux mipsç³»ç»Ÿçš„ç¨‹åº
 set GOOS=linux
 set GOARCH=mips
 mkdir %GOOS%-%GOARCH% 1>nul 2>nul
 mkdir %version% 1>nul 2>nul
 move %version% %GOOS%-%GOARCH% 1>nul 2>nul
 echo.
-echo ¿ªÊ¼±àÒë·þÎñ¶Ë...
+echo å¼€å§‹ç¼–è¯‘æœåŠ¡ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frps src/cmd/frps/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo ¿ªÊ¼±àÒë¿Í»§¶Ë...
+echo å¼€å§‹ç¼–è¯‘å®¢æˆ·ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frpc src/cmd/frpc/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo °´ÈÎÒâ¼ü¼ÌÐø±àÒëÏÂÒ»¸öÏµÍ³°æ±¾
-pause>nul
 
-echo ¿ªÊ¼±àÒëLinux mipsleÏµÍ³µÄ³ÌÐò
+echo å¼€å§‹ç¼–è¯‘Linux mipsleç³»ç»Ÿçš„ç¨‹åº
 set GOOS=linux
 set GOARCH=mipsle
 mkdir %GOOS%-%GOARCH% 1>nul 2>nul
 mkdir %version% 1>nul 2>nul
 move %version% %GOOS%-%GOARCH% 1>nul 2>nul
 echo.
-echo ¿ªÊ¼±àÒë·þÎñ¶Ë...
+echo å¼€å§‹ç¼–è¯‘æœåŠ¡ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frps src/cmd/frps/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo ¿ªÊ¼±àÒë¿Í»§¶Ë...
+echo å¼€å§‹ç¼–è¯‘å®¢æˆ·ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frpc src/cmd/frpc/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo °´ÈÎÒâ¼ü¼ÌÐø±àÒëÏÂÒ»¸öÏµÍ³°æ±¾
-pause>nul
 
-echo ¿ªÊ¼±àÒëMAC 32Î»ÏµÍ³µÄ³ÌÐò
+echo å¼€å§‹ç¼–è¯‘MAC 32ä½ç³»ç»Ÿçš„ç¨‹åº
 set GOOS=darwin
 set GOARCH=386
 mkdir %GOOS%-%GOARCH% 1>nul 2>nul
 mkdir %version% 1>nul 2>nul
 move %version% %GOOS%-%GOARCH% 1>nul 2>nul
 echo.
-echo ¿ªÊ¼±àÒë·þÎñ¶Ë...
+echo å¼€å§‹ç¼–è¯‘æœåŠ¡ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frps src/cmd/frps/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo ¿ªÊ¼±àÒë¿Í»§¶Ë...
+echo å¼€å§‹ç¼–è¯‘å®¢æˆ·ç«¯...
 go build -o %GOOS%-%GOARCH%/%version%/frpc src/cmd/frpc/main.go
-echo ±àÒëÍê³É
+echo ç¼–è¯‘å®Œæˆ
 echo.
-echo °´ÈÎÒâÍË³ö
+echo æŒ‰ä»»æ„é€€å‡º
 pause>nul
