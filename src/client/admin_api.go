@@ -55,7 +55,7 @@ func (svr *Service) apiReload(w http.ResponseWriter, r *http.Request, _ httprout
 	if config.ClientCommonCfg.Host == "" {
 		conf, err = ini.LoadFile("./frpc.ini")
 	} else {
-		resp, err = http.Get("http://" + config.ClientCommonCfg.Host + "/api?user=" + config.ClientCommonCfg.User)
+		resp, err = http.Get("http://" + config.ClientCommonCfg.Host + "/api/frpc?user=" + config.ClientCommonCfg.User)
 		if err != nil {
 			panic(err)
 		}
