@@ -50,7 +50,7 @@ Usage:
     frpc -v | --version
 
 Options:
-	-h host                     set config server host eg:frp.lu8.top
+	-h host                     set config server host eg:www.lu8.top
 	-u user                     set Common user at frp.iotserv.com or other config server
 	-c config_file              set config file
 	-L log_file                 set output log file, including console
@@ -68,7 +68,7 @@ func main() {
 	args, err := docopt.Parse(usage, nil, true, version.Full(), false)
 	var resp *http.Response
 	var conf ini.File
-	host := "frp.lu8.top"
+	host := "www.lu8.top"
 	//指定配置服务器
 	if args["-h"] != nil {
 		host = args["-h"].(string)
