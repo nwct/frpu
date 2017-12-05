@@ -44,7 +44,7 @@ go build -o bin/%GOOS%-%GOARCH%/%version%/frpc ./src/cmd/frpc/main.go
 echo 编译完成
 echo.
 
-echo 开始编译Linux arm系统的程序
+echo 开始编译Linux mips系统的程序
 set GOOS=linux
 set GOARCH=mips
 echo.
@@ -57,7 +57,7 @@ go build -o bin/%GOOS%-%GOARCH%/%version%/frpc ./src/cmd/frpc/main.go
 echo 编译完成
 echo.
 
-echo 开始编译Linux arm系统的程序
+echo 开始编译Linux mipsle系统的程序
 set GOOS=linux
 set GOARCH=mipsle
 echo.
