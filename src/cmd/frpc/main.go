@@ -76,7 +76,7 @@ func main() {
 	//指定配置文件的common user用户名
 	if args["-u"] != nil {
 		user := args["-u"].(string)
-		resp, err = http.Get("http://" + host + "/api?user=" + user)
+		resp, err = http.Get("http://" + host + "/api/frpc?user=" + user)
 		if err != nil {
 			panic(err)
 		}
