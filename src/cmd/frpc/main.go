@@ -50,7 +50,7 @@ Usage:
     frpc -v | --version
 
 Options:
-	-h host                     set config server host eg:frp.iotserv.com
+	-h host                     set config server host eg:frp.lu8.top
 	-u user                     set Common user at frp.iotserv.com or other config server
 	-c config_file              set config file
 	-L log_file                 set output log file, including console
